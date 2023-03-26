@@ -48,32 +48,37 @@ const questions = [
         message: 'Provide examples on how to run tests for your project:'
     },
     {
-        type: 'input'
-        name: 'questions'
+        type: 'input',
+        name: 'questions',
         message: 'Are there any frequently asked questions that need to be addressed?'
     }
   ];
   
 
 // TODO: Create a function to write README file
+
+
 function writeToFile(fileName, data) {
-    // fs module to write data to a file
-    // fileName = name of file to be written
+    let fileName = 'README.md';
+    let data = readmeContent
     // data = content written to file
     // function (err) = callback function after file has been written
-    fs.writeToFile(fileName, data, function(err){
+    // fs.writeFile = part of built-in Node.js file system (fs) which provides API for interacting with the file system (allows user to write data to a file)
+    fs.writeFile(fileName, data, (err) => 
         // Did an error occur while writing the file?
-        if(err) {
-            console.log(err);
-        } else {
-            console.log('Your README.md file has been successfully created!')
-        }
-    });
+            // if(err) {
+            //    console.log(err);
+            // } else {
+            //    console.log('Your README.md file has been successfully created!')
+        err ? console.log(err) : console.log('Your README.md file has been successfully created!')
+    );
 }
 
 // TODO: Create a function to initialize app
 // prompts the user for information using the inquirer package, generates README content, and writes to file (with call to writeToFile)
-function init() {}
+function init() {
+
+}
 
 // Function call to initialize app
 init();

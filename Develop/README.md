@@ -1,6 +1,8 @@
-# [dfgdfgd](#dfgdfgd)
+# [sdfsdfsdf](#sdfsdfsdf)
+        
+![GitHub license](https://img.shields.io/badge/license-mit-green.svg)
 
-        dfgdfg
+        sdsdfsdfsdf
    
 ## [Table of Contents:](#table-of-contents:)
    
@@ -13,27 +15,27 @@
    
 ## [Installation:](#installation:)
    
-       dfgdfg
+       sdfsdfsdf
    
 ## [Usage:](#usage:)
    
-       dfgdfg
+       sdfsdsdf
    
 ## [License:](#license:)
    
-       This project is licensed under the GNU AGPLv3 license.
+       This project is licensed under the MIT License license.
    
 ## [Contributing:](#contributing:)
    
-       dfgdfg
+       sdfsdfsdfsdf
    
 ## [Tests:](#tests:)
    
-       dfgdfg
+       sdfsdf
    
 ## [Questions:](#questions:)
    
-       dfgdfg
+       sdfsdff
    
 ------------------------------------------------------------------------------------------------
    

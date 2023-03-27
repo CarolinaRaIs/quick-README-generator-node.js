@@ -4,6 +4,16 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // Needed for writeFileAsync function (addresses rejection errors)
 const util = require('util');
+const licenseBadges = {
+    'GNU AGPLv3': 'agpl-3.0',
+    'GNU GPLv3': 'gpl-3.0',
+    'GNU LGPLv3': 'lgpl-3.0',
+    'Mozilla Public License 2.0': 'mpl-2.0',
+    'Apache License 2.0': 'apache-2.0',
+    'MIT License': 'mit',
+    'Boost Software License 1.0': 'bsl-1.0',
+    'The Unlicense': 'unlicense'
+  };  
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // Create an array of questions for user input
@@ -90,6 +100,8 @@ const init = () => {
         const readmeContent = 
         //({data.title, data.description, data.installation, data.usage, data.contributing, data.tests, data.questions, data.username }) =>
         `# ${data.title}
+        
+![GitHub license](https://img.shields.io/badge/license-${licenseBadges[data.license]}-green.svg)
 
         ${data.description}
    

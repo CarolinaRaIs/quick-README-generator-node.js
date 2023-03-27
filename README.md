@@ -1,9 +1,5 @@
 # quick-README-generator-node.js
-A quickly and easily generated README file created through a command-line interface.
-
-# ${data.title}
-
-        ${data.description}
+    A quickly and easily generated README file created through a command-line interface.
     
 ## Table of Contents:
     

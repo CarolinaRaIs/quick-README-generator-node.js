@@ -1,6 +1,10 @@
 # quick-README-generator-node.js
     A quickly and easily generated README file created through a command-line interface.
     
+# ${data.title}
+
+    ${data.description}
+
 ## Table of Contents:
     
  - [Installation](#installation)
@@ -12,27 +16,27 @@
     
 ## Installation:
     
-        ${data.installation}
+    ${data.installation}
     
 ## Usage:
     
-        ${data.usage}
+    ${data.usage}
     
 ## License:
     
-        This project is licensed under the ${data.license} license.
+    This project is licensed under the ${data.license} license.
     
 ## Contributing:
     
-        ${data.contributing}
+    ${data.contributing}
     
 ## Tests:
     
-        ${data.tests}
+    ${data.tests}
     
 ## Questions:
     
-        ${data.questions}
+    ${data.questions}
     
 ------------------------------------------------------------------------------------------------
     

@@ -4,16 +4,20 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // Needed for writeFileAsync function (addresses rejection errors)
 const util = require('util');
-const licenseBadges = {
-    'GNU AGPLv3': 'agpl-3.0',
-    'GNU GPLv3': 'gpl-3.0',
-    'GNU LGPLv3': 'lgpl-3.0',
-    'Mozilla Public License 2.0': 'mpl-2.0',
-    'Apache License 2.0': 'apache-2.0',
-    'MIT License': 'mit',
-    'Boost Software License 1.0': 'bsl-1.0',
-    'The Unlicense': 'unlicense'
-  };  
+// To handle badges based on license (badge link is dependent on color)
+// Colors referenced here: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba 
+
+const licenseURL = {
+    'GNU AGPLv3': '![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)',
+    'GNU GPLv3': '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)',
+    'GNU LGPLv3': '![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)',
+    'Mozilla Public License 2.0': '![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)',
+    'Apache License 2.0': '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)',
+    'MIT License': '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)',
+    'Boost Software License 1.0': '![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)',
+    'The Unlicense': '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'
+}
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // Create an array of questions for user input
@@ -64,6 +68,11 @@ const questions = [
         type: 'input',
         name: 'questions',
         message: 'Are there any frequently asked questions that need to be addressed?'
+    },
+    {
+        type: 'input',
+        name: 'contact',
+        message: 'How can we contact you for any additional questions that may arise?'
     }
   ];
   
@@ -95,13 +104,15 @@ const init = () => {
         console.log(data);
         // curly brackets indicate deconstructing an object amd properties within brackets is property wanting to extract
             // ie: data.title, data.description, data.installation, data.usage, data.contributing, data.tests, data.questions, data.username 
-        const { title, description, installation, usage, contributing, tests, questions, username } = data;
+        const { title, description, installation, usage, contributing, tests, questions, contact, username } = data;
         const fileName = 'README.md';
         const readmeContent = 
         //({data.title, data.description, data.installation, data.usage, data.contributing, data.tests, data.questions, data.username }) =>
         `# ${data.title}
         
-![GitHub license](https://img.shields.io/badge/license-${licenseBadges[data.license]}-green.svg)
+${licenseURL[data.license]}
+
+## Description:
 
         ${data.description}
    
@@ -137,6 +148,8 @@ const init = () => {
 ## Questions:
    
        ${data.questions}
+
+       **If more questions arise please contact ${data.username} at **${data.contact}**.
    
 ------------------------------------------------------------------------------------------------
    

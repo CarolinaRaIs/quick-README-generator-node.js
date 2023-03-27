@@ -1,4 +1,5 @@
 # quick-README-generator-node.js
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
     A quickly and easily generated README file created through a command-line interface.
    

@@ -108,7 +108,7 @@ ${licenseURL[data.license]}
 
 ## Description:
 
-        ${data.description}
+${data.description}
    
 ## Table of Contents:
    
@@ -121,29 +121,29 @@ ${licenseURL[data.license]}
    
 ## Installation:
    
-       ${data.installation}
+${data.installation}
    
 ## Usage:
    
-       ${data.usage}
+${data.usage}
    
 ## License:
    
-       This project is licensed under the ${data.license} license.
+This project is licensed under the ${data.license} license.
    
 ## Contributing:
    
-       ${data.contributing}
+${data.contributing}
    
 ## Tests:
    
-       ${data.tests}
+${data.tests}
    
 ## Questions:
    
-       ${data.questions}
+${data.questions}
 
-       If more questions arise please contact ${data.username} at ${data.contact}.
+If more questions arise please contact ${data.username} at ${data.contact}.
    
 ------------------------------------------------------------------------------------------------
    

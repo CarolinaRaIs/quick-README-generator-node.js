@@ -143,7 +143,7 @@ ${data.tests}
    
 ${data.questions}
 
-If more questions arise please contact ${data.username} at ${data.contact}.
+**If more questions arise please contact ${data.username} at ${data.contact}.**
    
 ------------------------------------------------------------------------------------------------
    

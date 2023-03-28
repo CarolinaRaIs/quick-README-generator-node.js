@@ -1,6 +1,6 @@
-# [dfgdfg](#dfgdfg)
+# [dfgdfgdfg](#dfgdfgdfg)
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)
 
 ## [Description:](#description:)
 
@@ -25,11 +25,11 @@ dfgdfg
    
 ## [License:](#license:)
    
-This project is licensed under the MIT License license.
+This project is licensed under the GNU AGPLv3 license.
    
 ## [Contributing:](#contributing:)
    
-dfgdfgg
+dfgdfgdfg
    
 ## [Tests:](#tests:)
    
@@ -39,7 +39,7 @@ dfgdfg
    
 dfgdfg
 
-If more questions arise please contact dfgdfg at dfgdfg.
+**If more questions arise please contact dfgdfg at dfgdfg.**
    
 ------------------------------------------------------------------------------------------------
    

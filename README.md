@@ -39,7 +39,7 @@
 
        Once you have completed all of the prompts, a file named 'README.md' will be automatically generated and saved to the root directory of your repository.
 
-![Git](videoready.gif)  
+![Git](tutorial-README.gif)  
 
 ![plot](./sample-README.png)
 

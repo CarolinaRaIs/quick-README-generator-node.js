@@ -21,7 +21,8 @@ ${data.description}
 - [Questions](#questions)
    
 ## [Installation:](#installation:)
-   
+
+Install the Inquirer package by running npm i inquirer@8.2.4 in the command line.
    
 ## [Usage:](#usage:)
    
@@ -37,9 +38,45 @@ ${data.description}
    
 ## [Questions:](#questions:)
 
-${data.questions}
+Q: 
+Why do you have to make sure to create your .gitignore file before installing any npm dependencies? Hence, why should you ensure there is a .gitignore file before running any npm install commands?
 
-**If more questions arise please contact ${data.username} at ${data.contact}.**
+
+A:
+When you install npm dependencies for your project, they are typically added to the node_modules directory, which can contain a large number of files and directories. The .gitignore file is used to specify files or directories that should be ignored by Git, which is important because you usually don't want to include all the files in node_modules in your Git repository.
+
+If you create your .gitignore file after you've installed your dependencies, it may be too late, as Git may have already started tracking the node_modules directory and all its contents. This can make your repository unnecessarily large and slow, and can also cause issues if you try to share your repository with others. 
+
+
+Q:
+Should I run the command npm i or npm install after installing the Inquirer package by running npm i inquirer@8.2.4 in the command line?
+
+A:
+If you have already installed Inquirer package using npm i inquirer@8.2.4 command and you have the required dependencies installed locally in the node_modules directory, you don't need to run npm install again.
+
+
+Q:
+Why is it important to install the the node_modules directory?
+
+A:
+Inside the node_modules directory, there is a list of directories for each of the dependencies that your project requires, along with any sub-dependencies they may have. This is where Node.js stores all the packages that your project depends on. The node_modules directory is important as it helps to ensure that all the necessary packages and dependencies are available and the project can be run without errors!
+
+
+Q: 
+Where would my node_modules directory be located?
+
+A:
+The node_modules directory is typically located in the root of your project directory, alongside other files like package.json, README.md, etc. It's a hidden directory, so it may not be visible in your file explorer by default. To view hidden files and directories, you can usually enable the "Show hidden files" option in your file explorer settings.
+
+
+Q:
+Does each license badge has its own URL to render correctly in the README?
+
+A: 
+Yes! When using badges in a README file, it's important to make sure that the URLs are correct and up-to-date to  ensure that the badges are displayed correctly. This was the resource used to extract the URLs: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba for this project.
+
+
+**If more questions arise please contact CarolinaRaIs at determination28@gmail.com**
    
 
        

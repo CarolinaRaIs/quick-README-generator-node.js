@@ -49,6 +49,7 @@
 
        To access the deployed site visit:
        https://carolinarais.github.io/quick-README-generator-node.js/
+
 ## [License:](#license:)
 
        This project is licensed under the MIT License license.
@@ -97,7 +98,7 @@
        Does each license badge has its own URL to render correctly in the README?
 
        A: 
-       Yes! When using badges in a README file, it's important to make sure that the URLs are correct and up-to-date to  ensure that the badges are displayed correctly. This was the resource used to extract the URLs: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba for this project.
+       Yes! When using badges in a README file, it's important to make sure that the URLs are correct and up-to-date to  ensure that the badges are displayed correctly. This was the resource used to extract the URLs for this project: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 
 **If more questions arise please contact CarolinaRaIs at determination28@gmail.com**

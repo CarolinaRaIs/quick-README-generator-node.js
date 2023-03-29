@@ -9,7 +9,19 @@ ${licenseURL[data.license]}
 
 ## Description
 
-${data.description}
+Having a high-quality README is essential for any successful project. It provides crucial information about the application, including its purpose, usage, installation process, how to report issues, and how to make contributions. This information not only helps other developers understand the project but also encourages them to contribute to its success.
+
+To save time and effort, a command-line application can generate a project README quickly and easily. By automating this process, project creators can focus on finishing the application rather than spending valuable time crafting a good README.
+
+This command-line application runs with Node.js and utilizes the inquirer and fs packages to collect user input and generate a README.md file based on that input.
+
+To begin, the necessary packages are imported and an object called licenseURL is created to map different licenses to their corresponding badge links.
+
+An array of questions is then created using the inquirer.prompt function to gather user input. The responses are stored in an object called data.
+
+Two functions are defined: writeToFile and init. The writeToFile function utilizes the fs.writeFile function to write the generated README file to the file system. The init function prompts the user for information using the inquirer.prompt function, generates the README content, and writes it to file by calling writeToFile.
+
+Finally, the init function is called to initiate the application.
 
 ## [Table of Contents:](#table-of-contents:)
    
@@ -25,7 +37,10 @@ ${data.description}
 Install the Inquirer package by running npm i inquirer@8.2.4 in the command line.
    
 ## [Usage:](#usage:)
-   
+
+To generate the README, first navigate to the directory where the index.js file is located. Then, open your terminal and run the command "node index.js". This will display a series of prompts in your command line interface (CLI), which you should answer to provide information about your project.
+
+Once you have completed all of the prompts, a file named 'README.md' will be automatically generated and saved to the root directory of your repository.
    
 ## [License:](#license:)
    

@@ -23,6 +23,8 @@ Two functions are defined: writeToFile and init. The writeToFile function utiliz
 
 Finally, the init function is called to initiate the application.
 
+This application leverages the latest syntax and paradigms of ES6, including arrow functions, const and let declarations, and template literals. Furthermore, it employs object-oriented programming (OOP) principles, which prioritize the use of objects and classes to organize code.
+
 ## [Table of Contents:](#table-of-contents:)
    
 - [Installation](#installation)
@@ -38,12 +40,13 @@ Install the Inquirer package by running npm i inquirer@8.2.4 in the command line
    
 ## [Usage:](#usage:)
 
-To generate the README, first navigate to the directory where the index.js file is located. Then, open your terminal and run the command "node index.js". This will display a series of prompts in your command line interface (CLI), which you should answer to provide information about your project.
+To generate the README, first navigate to the directory where the index.js file is located. Then, open your terminal and run the command "node index.js". This will display a series of prompts in your command line interface (CLI); answer them to provide information about your project.
 
 Once you have completed all of the prompts, a file named 'README.md' will be automatically generated and saved to the root directory of your repository.
    
 ## [License:](#license:)
-   
+
+This project is licensed under the MIT License license.
    
 ## [Contributing:](#contributing:)
    

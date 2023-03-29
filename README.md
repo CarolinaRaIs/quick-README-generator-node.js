@@ -1,13 +1,7 @@
 # quick-README-generator-node.js
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-       A quickly and easily generated README file created through a command-line interface.
-
-# ${data.title}
-
-
-
-## Description
+## [Description:](#description)
 
        Having a high-quality README is essential for any successful project. It provides crucial information about the application, including its purpose, usage, installation process, how to report issues, and how to make contributions. This information not only helps other developers understand the project but also encourages them to contribute to its success.
 
@@ -27,6 +21,7 @@
 
 ## [Table of Contents:](#table-of-contents:)
    
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -43,7 +38,17 @@
        To generate the README, first navigate to the directory where the index.js file is located. Then, open your terminal and run the command "node index.js". This will display a series of prompts in your command line interface (CLI); answer them to provide information about your project.
 
        Once you have completed all of the prompts, a file named 'README.md' will be automatically generated and saved to the root directory of your repository.
-   
+
+![Git](videoready.gif)  
+
+![plot](./sample-README.png)
+
+
+       To access the Github Repository visit:
+       https://github.com/CarolinaRaIs/quick-README-generator-node.js
+
+       To access the deployed site visit:
+       https://carolinarais.github.io/quick-README-generator-node.js/
 ## [License:](#license:)
 
        This project is licensed under the MIT License license.
@@ -60,7 +65,6 @@
 
        Q: 
        Why do you have to make sure to create your .gitignore file before installing any npm dependencies? Hence, why should you ensure there is a .gitignore file before running any npm install commands?
-
 
        A:
        When you install npm dependencies for your project, they are typically added to the node_modules directory, which can contain a large number of files and directories. The .gitignore file is used to specify files or directories that should be ignored by Git, which is important because you usually don't want to include all the files in node_modules in your Git repository.
